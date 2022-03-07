@@ -1,9 +1,25 @@
+import styled from 'styled-components';
+import { Topbar , Sidebar } from './components';
+import { Home } from './pages';
+
+
+ const Container = styled.div`
+ display: flex;
+`;
+
 
 function App() {
   return (
-    <div>
-       Este á o admin
-    </div>
+    <>
+    <Topbar/>
+    <Container>
+        <Sidebar/> 
+
+        <Home/>
+
+    </Container>
+
+    </>
   );
 }
 
